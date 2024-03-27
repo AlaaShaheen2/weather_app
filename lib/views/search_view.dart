@@ -1,3 +1,5 @@
+
+
 import 'package:flutter/material.dart';
 
 class SearchView extends StatelessWidget {
@@ -9,28 +11,25 @@ class SearchView extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Search a City'),
       ),
-      body:const Padding(
-        padding:  EdgeInsets.symmetric(horizontal: 20),
+      body: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 20),
         child: Center(
           child: TextField(
-            
-            decoration:  InputDecoration(
+            onSubmitted: (value) {},
+            decoration:const  InputDecoration(
               contentPadding: EdgeInsets.symmetric(
                 horizontal: 16,
                 vertical: 32,
               ),
               labelText: 'Search',
-               suffixIcon: Icon(Icons.search),
+              suffixIcon: Icon(Icons.search),
               hintText: 'Enter City Name',
-             
               border: OutlineInputBorder(
                 borderSide: BorderSide(
                   color: Colors.orange,
                 ),
               ),
-          
             ),
-          
           ),
         ),
       ),
